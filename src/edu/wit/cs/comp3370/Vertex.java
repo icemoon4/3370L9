@@ -1,7 +1,6 @@
 package edu.wit.cs.comp3370;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 // represents a vertex in a graph, including a unique ID to keep track of vertex
 public class Vertex{

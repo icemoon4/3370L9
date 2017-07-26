@@ -3,10 +3,6 @@ package edu.wit.cs.comp3370;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.Scanner;
 
 /* Calculates the minimal spanning tree of a graph 
