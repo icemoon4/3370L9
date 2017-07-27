@@ -59,10 +59,12 @@ public class LAB9 {
 			}
 			for(int i = 0; i<u.neighbors.size(); i++){
 				if(vertex.contains(u.neighbors.get(i)) && distance(u, u.neighbors.get(i)) < u.neighbors.get(i).c){
-					u.neighbors.get(i).c = distance(u, u.neighbors.get(i));
-					u.neighbors.get(i).parent = u;
-					pushdown(vertex,vertex.indexOf(u.neighbors.get(i)));
-					pullup(vertex,vertex.indexOf(u.neighbors.get(i)));
+					Vertex neighbor = u.neighbors.get(i);
+					neighbor.c = distance(u, neighbor);
+					neighbor.parent = u;
+					int ind = vertex.indexOf(neighbor);
+					pushdown(vertex,ind);
+					pullup(vertex,ind);
 				}
 			}
 		}
